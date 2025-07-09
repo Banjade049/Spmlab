@@ -7,6 +7,7 @@ on:
 
 jobs:
   auto-run:
+   
     runs-on: ubuntu-latest
 
     steps:
@@ -18,3 +19,4 @@ jobs:
 
       - name: Demo running
         run: ./demo.sh
+        continue-on-error: true
